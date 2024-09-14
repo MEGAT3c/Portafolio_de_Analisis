@@ -66,3 +66,8 @@ weighted avg       0.91      0.74      0.79     47969
 
 Puntuaciones de validación cruzada (F1-score): [0.33698662 0.33765935 0.33316242 0.33862799 0.335942  ]
 Promedio de F1-score en validación cruzada: 0.33647567652478105
+
+Con lo cual se puede observar lo siguiente:
+
+- Mejor Generalización: La validación cruzada asegura que el modelo generalice mejor, ya que se evalúa en diferentes divisiones del conjunto de entrenamiento.
+- Reducción de Sesgo y Varianza: Con la técnica de balanceo de clases y el ajuste adecuado de hiperparámetros, se observa una mejora tanto en la predicción de la clase minoritaria como en la estabilidad del modelo.
