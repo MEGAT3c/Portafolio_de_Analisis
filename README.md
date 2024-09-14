@@ -32,3 +32,37 @@ Basado en este diagnóstico, vamos a aplicar algunas técnicas para mejorar el r
 - Ajuste de hiperparámetros:
 
   Vamos a ajustar los hiperparámetros, en particular el parámetro C, para ver si un valor mayor mejora el rendimiento del modelo en la clase minoritaria.
+
+
+En el nuevo código se cuenta con dos modelos nuevos usando GridSearch y el segundo usando GridSearch y Cross Validation, Teniendo las siguientes mejoras en su implementación.
+
+
+- Modelo 1:
+  Mejor parámetro C: {'C': 100}
+Accuracy en validación: 0.7387062477850278
+Reporte de clasificación:
+              precision    recall  f1-score   support
+
+           0       0.97      0.74      0.84     43863
+           1       0.21      0.77      0.33      4106
+
+    accuracy                           0.74     47969
+   macro avg       0.59      0.75      0.59     47969
+weighted avg       0.91      0.74      0.79     47969
+
+
+- Modelo 2:
+  Mejor parámetro C: {'C': 100}
+Accuracy en validación: 0.7387062477850278
+Reporte de clasificación:
+              precision    recall  f1-score   support
+
+           0       0.97      0.74      0.84     43863
+           1       0.21      0.77      0.33      4106
+
+    accuracy                           0.74     47969
+   macro avg       0.59      0.75      0.59     47969
+weighted avg       0.91      0.74      0.79     47969
+
+Puntuaciones de validación cruzada (F1-score): [0.33698662 0.33765935 0.33316242 0.33862799 0.335942  ]
+Promedio de F1-score en validación cruzada: 0.33647567652478105
